@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that displays the content of the file /etc/passwd.
+# Your script should only display:username, user id, path for the user
+
+file=/etc/passwd
+
+while IFS=':' read -r a1 a2 a3 a4 a5 a6 a7
+do
+  echo "The user $a1 is part of the $a4 gang, lives in $a6 and rides $a7. $a3's place is protected by the passcode $a2, more info about the user here: $a5"
+  done < "$file"
