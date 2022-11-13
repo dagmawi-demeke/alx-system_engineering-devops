@@ -5,11 +5,7 @@ whiteboard: https://lucid.app/lucidchart/b1b9a73d-8427-4bb4-8c85-3c3394d0bdbf/ed
 # Description
 This is a distributed web architecture that tries to decrease traffic to the primary server by shifting some of the load to a replica server with the help of a server that balances the load between the two servers (primary and replica). 
 
-    What distribution algorithm your load balancer is configured with and how it works?
-    The Round Robin distribution mechanism is set up on the HAProxy load balancer. This method employs each server 
-    behind the load balancer in turn, based on their weights. It's also possibly the smoothest and most equitable 
-    method because the servers' processing time is allocated evenly. Round Robin, being a dynamic algorithm, 
-    allowing server weights to be modified in real time. 
+   
 
     Is your load-balancer enabling an Active-Active or Active-Passive setup? explain the difference between both...
     The HAProxy load balancer is enabling an Active-Passive configuration rather than an Active-Active configuration. 
